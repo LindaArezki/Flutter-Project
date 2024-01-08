@@ -36,12 +36,19 @@ class MyHomePage extends StatelessWidget {
       ),
       drawer: Drawer(
         child: ListView(
-          children: const [
+          children:  [
+            const DrawerHeader(
+              padding: EdgeInsets.only(left:50),
+              child: Text('Welcome on the swandwich menu',style: TextStyle(fontSize: 25)),
+            ),
             ListTile(
-              title: Text('First menu'),
-
+              leading: const CircleAvatar(
+                  child: Text('First'),
+                ),
+                title: const Text('First menu 1',style: TextStyle(fontSize: 25, color:Colors.teal),),
+                trailing: IconButton(onPressed:() {}, icon: const Icon(Icons.access_alarm)),
               ),
-            ListTile(
+            const ListTile(
               title: Text('second menu'),
             )
           ],
@@ -58,6 +65,14 @@ class MyHomePage extends StatelessWidget {
           ),
           const Text('ITEM 2',style:TextStyle(fontSize: 60, color:Colors.greenAccent),),
           const Text('ITEM 2',style: TextStyle(fontSize: 60, color:Colors.cyan),),
+          const Image(image: AssetImage('images/rat.jpeg'),),
+          Container(
+            color: Colors.greenAccent,
+            height: 100,
+            padding: EdgeInsets.only(left:50),
+            margin: EdgeInsets.symmetric(horizontal: 50),
+            child: const Text('Tete du container'),
+          )
 
       ],)
 
