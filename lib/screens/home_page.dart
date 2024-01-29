@@ -13,10 +13,10 @@ class MyHomePage extends StatelessWidget {
 
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.greenAccent,
-          title: const Text('Navbar'),
-          leading: const CircleAvatar(
-            child: Text('LA'),)
+            backgroundColor: Colors.greenAccent,
+            title: const Text('Navbar'),
+            leading: const CircleAvatar(
+              child: Text('LA'),)
 
         ),
 

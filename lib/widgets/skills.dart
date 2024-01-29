@@ -9,9 +9,9 @@ class Skill extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Column(
-        children: [
-          Text(competence.name)
-        ]
+          children: [
+            Text(competence.name)
+          ]
       ),
     );
   }
